@@ -30,9 +30,19 @@ Tk.frame= Frame(root)
 
 # 3. Functionalities
 
+def submit():
+    value_one = first_value_entry.get()
+    value_two = second_value_entry.get()
+    value_three = third_value_entry.get()
+    
+    if value_one >= value_two and value_one >= value_three:
+        highest = value_one
+    elif value_two >= value_one and value_two >= value_three:
+        highest = value_two
+    else:
+        highest = value_three
 
-
-
+    print("The highest number is", highest)
 
 # 4. Entries and Label
 
@@ -63,7 +73,7 @@ second_value_entry.grid(row=3,column=1,columnspan=3,padx=5,pady=5)
 third_value_entry.grid(row=4,column=1,columnspan=3,padx=5,pady=5)
 
 # (submit button)
-submit_button = Button(text="SUBMIT", bg="#000000", fg="#FFFFFF", font="Franklin 12 bold")
+submit_button = Button(text="SUBMIT", bg="#000000", fg="#FFFFFF", font="Franklin 12 bold", command = submit)
 submit_button.grid(row=5,column=1, )
 
 
