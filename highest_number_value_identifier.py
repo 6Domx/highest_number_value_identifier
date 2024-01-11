@@ -35,15 +35,23 @@ def submit():
     value_two = second_value_entry.get()
     value_three = third_value_entry.get()
     
+    value_one = float(value_one)
+    value_two = float(value_two)
+    value_three = float(value_three)
+
     if value_one >= value_two and value_one >= value_three:
-        highest = value_one
+       highest = value_one
+       entry_number = 1
     elif value_two >= value_one and value_two >= value_three:
-        highest = value_two
+       highest = value_two
+       entry_number = 2
     else:
         highest = value_three
+        entry_number = 3
 
-    print("The highest number is", highest)
+    print("The highest number is", highest, "in entry number", entry_number, ".")
 
+    
 # 4. Entries and Label
 
 
