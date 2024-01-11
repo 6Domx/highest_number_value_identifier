@@ -48,9 +48,11 @@ def submit():
     else:
         highest = value_three
         entry_number = 3
-
-    print("The highest number is", highest, "in entry number", entry_number, ".")
-
+    if not value_one or not value_two or not value_three:
+        messagebox.showerror(title="Declined", message="Please fill in all the required fields.")
+    else:
+        messagebox.showinfo(title="Answer", message= "The highest number is " + str(highest)  + " in entry number " +  str(entry_number)  + ".")
+    
     
 # 4. Entries and Label
 
