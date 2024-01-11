@@ -55,12 +55,16 @@ first_value_entry=Entry(root, width=25, bd=5, font=("Arial Bold 15",15))
 second_value_entry=Entry(root, width=25, bd=5, font=("Arial Bold 15",15))
 third_value_entry=Entry(root, width=25, bd=5, font=("Arial Bold 15",15))
 
+
 # (entry pos)
 
 first_value_entry.grid(row=2,column=1,columnspan=3,padx=5,pady=5)
 second_value_entry.grid(row=3,column=1,columnspan=3,padx=5,pady=5)
 third_value_entry.grid(row=4,column=1,columnspan=3,padx=5,pady=5)
 
+# (submit button)
+submit_button = Button(text="SUBMIT", bg="#000000", fg="#FFFFFF", font="Franklin 12 bold")
+submit_button.grid(row=5,column=1, )
 
 
 root.mainloop()
