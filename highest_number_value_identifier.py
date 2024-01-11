@@ -26,4 +26,11 @@ lbl=Label(root,image=bck_end)
 lbl.place(x=0,y=0)
 root.resizable(False,False)
 
+# 3. Functionalities
+
+
+
+
+
+
 root.mainloop()
