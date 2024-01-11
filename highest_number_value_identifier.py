@@ -36,14 +36,15 @@ Tk.frame= Frame(root)
 
 # 4. Entries and Label
 
+
 # (labels)
-title_label = Label(root, text=("Highest Value Identifier"), bg="#000000" , fg="#E5E9EC", font=("Planet Kosmos", 25),bd=2)
-first_value_label=Label(root,text="First Value", bg="#000000", fg="#E5E9EC",font=("Planet Kosmos", 15))
-second_value_label=Label(root,text="Second Value", bg="#000000", fg="#E5E9EC", font=("Planet Kosmos", 15))
-third_value_label=Label(root,text="Third Value", bg="#000000", fg="#E5E9EC", font=("Planet Kosmos", 15))
+title_label = Label(root, text=("Highest Value Identifier"), bg="#000000" , fg="#E5E9EC", font=("Airstrike", 30),bd=2)
+first_value_label=Label(root,text="First Value", bg="#000000", fg="#E5E9EC",font=("Venite Adoremus Straight", 15))
+second_value_label=Label(root,text="Second Value", bg="#000000", fg="#E5E9EC", font=("Venite Adoremus Straight", 15))
+third_value_label=Label(root,text="Third Value", bg="#000000", fg="#E5E9EC", font=("Venite Adoremus Straight", 15))
 
 # (label pos)
-title_label.grid(row=0,column=0,columnspan=8,padx=20,pady=20)
+title_label.grid(row=0,column=0,columnspan=3,padx=20,pady=20)
 first_value_label.grid(row=2,column=0,padx=10,pady=10)
 second_value_label.grid(row=3,column=0,padx=10,pady=10)
 third_value_label.grid(row=4,column=0,padx=10,pady=10)
