@@ -26,10 +26,39 @@ lbl=Label(root,image=bck_end)
 lbl.place(x=0,y=0)
 root.resizable(False,False)
 
+Tk.frame= Frame(root)
+
 # 3. Functionalities
 
 
 
+
+
+# 4. Entries and Label
+
+# (labels)
+title_label = Label(root, text=("Highest Value Identifier"), bg="#000000" , fg="#E5E9EC", font=("Planet Kosmos", 25),bd=2)
+first_value_label=Label(root,text="First Value", bg="#000000", fg="#E5E9EC",font=("Planet Kosmos", 15))
+second_value_label=Label(root,text="Second Value", bg="#000000", fg="#E5E9EC", font=("Planet Kosmos", 15))
+third_value_label=Label(root,text="Third Value", bg="#000000", fg="#E5E9EC", font=("Planet Kosmos", 15))
+
+# (label pos)
+title_label.grid(row=0,column=0,columnspan=8,padx=20,pady=20)
+first_value_label.grid(row=2,column=0,padx=10,pady=10)
+second_value_label.grid(row=3,column=0,padx=10,pady=10)
+third_value_label.grid(row=4,column=0,padx=10,pady=10)
+
+# (entries)
+
+first_value_entry=Entry(root, width=25, bd=5, font=("Arial Bold 15",15))
+second_value_entry=Entry(root, width=25, bd=5, font=("Arial Bold 15",15))
+third_value_entry=Entry(root, width=25, bd=5, font=("Arial Bold 15",15))
+
+# (entry pos)
+
+first_value_entry.grid(row=2,column=1,columnspan=3,padx=5,pady=5)
+second_value_entry.grid(row=3,column=1,columnspan=3,padx=5,pady=5)
+third_value_entry.grid(row=4,column=1,columnspan=3,padx=5,pady=5)
 
 
 
